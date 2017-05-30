@@ -9,16 +9,24 @@ import { MainLayoutComponent } from "./layouts/mainlayout.component";
 
 import { AppRoutingModule } from "./app.routing";
 
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+
+import { MdMenuModule, MdIconModule, MdButtonModule } from "@angular/material";
+
 @NgModule({
-  declarations: [
-    AppComponent,
-    MainLayoutComponent
-  ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MdMenuModule,
+    MdIconModule,
+    MdButtonModule
+  ],
+  declarations: [
+    AppComponent,
+    MainLayoutComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

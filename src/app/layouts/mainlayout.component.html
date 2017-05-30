@@ -12,8 +12,21 @@
 
         <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>Insight Studio</a>
 
-        <!--<a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="News"><i class="fa fa-globe"></i></a>
-        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-user"></i></a>
+        <div>
+            <button md-button [mdMenuTriggerFor]="menu">New Post</button>
+
+            <md-menu #menu="mdMenu">
+                <button md-menu-item>Deposit / Withdrawal</button>
+                <button md-menu-item>Task</button>
+                <button md-menu-item>Work Flow</button>
+            </md-menu>
+
+        </div>
+        
+
+        <!--<a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="News"><i class="fa fa-globe"></i></a>-->
+      
+        <!--<a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-user"></i></a>
         <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages"><i class="fa fa-envelope"></i></a>
         <div class="w3-dropdown-hover w3-hide-small">
             <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green">3</span></button>
@@ -40,12 +53,13 @@
                         <div class="w3-card-2 w3-round w3-white">
                             <div class="w3-container">
                                 <h4 class="w3-center">My Profile</h4>
-                                <p class="w3-center"><img src="./src/assets/img/1496146365_malecostume.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
-                                <!--<hr>-->
+                                <p class="w3-center"><img src="./src/assets/img/1496146365_malecostume.png" class="w3-circle" style="height:106px;width:106px"
+                                        alt="Avatar"></p>
+                                <hr>
 
-                                <!--<p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Designer, UI</p>
-                                <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> London, UK</p>
-                                <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> April 1, 1988</p>-->
+                                <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> My Task : 4</p>
+                                <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> Receive Message : 5</p>
+                                <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> April 1, 1988</p>
 
 
                             </div>
@@ -65,7 +79,7 @@
         <div id="body">
             <div class="w3-col m7">
 
-                <div class="w3-row-padding">
+                <!--<div class="w3-row-padding">
                     <div class="w3-col m12">
                         <div class="w3-card-2 w3-round w3-white">
                             <div class="w3-container w3-padding">
@@ -75,10 +89,86 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
 
                 <div class="w3-container w3-card-2 w3-white w3-round w3-margin"><br>
                     <img src="./src/assets/img/1496146376_female1.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+                    <span class="w3-right w3-opacity">1 min</span>
+                    <h4>John Doe</h4><br>
+                    <hr class="w3-clear">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat.
+                    </p>
+
+
+                    <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i> Like</button>
+                    <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i> Comment</button>
+                </div>
+
+
+                <div class="w3-container w3-card-2 w3-white w3-round w3-margin"><br>
+                    <img src="./src/assets/img/user1.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+                    <span class="w3-right w3-opacity">1 min</span>
+                    <h4>John Doe</h4><br>
+                    <hr class="w3-clear">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat.
+                    </p>
+
+
+                    <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i> Like</button>
+                    <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i> Comment</button>
+                </div>
+
+                 <div class="w3-container w3-card-2 w3-white w3-round w3-margin"><br>
+                    <img src="./src/assets/img/user2.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+                    <span class="w3-right w3-opacity">1 min</span>
+                    <h4>John Doe</h4><br>
+                    <hr class="w3-clear">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat.
+                    </p>
+
+
+                    <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i> Like</button>
+                    <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i> Comment</button>
+                </div>
+
+                 <div class="w3-container w3-card-2 w3-white w3-round w3-margin"><br>
+                    <img src="./src/assets/img/user3.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+                    <span class="w3-right w3-opacity">1 min</span>
+                    <h4>John Doe</h4><br>
+                    <hr class="w3-clear">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat.
+                    </p>
+
+
+                    <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i> Like</button>
+                    <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i> Comment</button>
+                </div>
+
+                 <div class="w3-container w3-card-2 w3-white w3-round w3-margin"><br>
+                    <img src="./src/assets/img/user4.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+                    <span class="w3-right w3-opacity">1 min</span>
+                    <h4>John Doe</h4><br>
+                    <hr class="w3-clear">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat.
+                    </p>
+
+
+                    <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i> Like</button>
+                    <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i> Comment</button>
+                </div>
+
+                 <div class="w3-container w3-card-2 w3-white w3-round w3-margin"><br>
+                    <img src="./src/assets/img/user5.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
                     <span class="w3-right w3-opacity">1 min</span>
                     <h4>John Doe</h4><br>
                     <hr class="w3-clear">
