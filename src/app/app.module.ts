@@ -2,16 +2,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-
 import { AppComponent } from './app.component';
-
 import { MainLayoutComponent } from "./layouts/mainlayout.component";
-
 import { AppRoutingModule } from "./app.routing";
-
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-
-import { MdMenuModule, MdIconModule, MdButtonModule } from "@angular/material";
+import { TimeLineComponent } from "./timeline/timeline.component";
+import { PopupService } from "./popup/popup.service";
+import { MaterialModule } from "@angular/material";
+import { PopupNewPostComponent } from "./popup/popup.newpost.component";
+import { BootstrapModalModule } from "ng2-bootstrap-modal";
+import { PopupConfirmComponent } from "./popup/popup.confirm.component";
 
 @NgModule({
   imports: [
@@ -20,15 +20,20 @@ import { MdMenuModule, MdIconModule, MdButtonModule } from "@angular/material";
     HttpModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MdMenuModule,
-    MdIconModule,
-    MdButtonModule
+    MaterialModule,
+    BootstrapModalModule
   ],
   declarations: [
     AppComponent,
-    MainLayoutComponent
+    MainLayoutComponent,
+    TimeLineComponent,
+    PopupNewPostComponent,
+    PopupConfirmComponent
   ],
-  providers: [],
+  entryComponents:[
+    PopupConfirmComponent
+  ],
+  providers: [PopupService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
