@@ -9,7 +9,5 @@ export class PopupNewPostComponent{
 
     public title:string;
 
-    constructor(public dialogRef:MdDialogRef<PopupNewPostComponent>){
-        
-    }
+
 }

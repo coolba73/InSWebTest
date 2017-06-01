@@ -22,11 +22,12 @@ export class MainLayoutComponent{
         }).subscribe((isConfirmed)=>{
             if(isConfirmed)
             {
-                alert('accept');
+                // alert('accept');
+                this.timelines.push(1);
             }
             else
             {
-                alert('declined');
+                // alert('declined');
             }
         });
 

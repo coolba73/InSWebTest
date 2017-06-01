@@ -7,7 +7,6 @@ import { MainLayoutComponent } from "./layouts/mainlayout.component";
 import { AppRoutingModule } from "./app.routing";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { TimeLineComponent } from "./timeline/timeline.component";
-import { PopupService } from "./popup/popup.service";
 import { MaterialModule } from "@angular/material";
 import { PopupNewPostComponent } from "./popup/popup.newpost.component";
 import { BootstrapModalModule } from "ng2-bootstrap-modal";
@@ -33,7 +32,7 @@ import { PopupConfirmComponent } from "./popup/popup.confirm.component";
   entryComponents:[
     PopupConfirmComponent
   ],
-  providers: [PopupService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
