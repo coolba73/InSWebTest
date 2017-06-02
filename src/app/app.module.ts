@@ -11,6 +11,7 @@ import { MaterialModule } from "@angular/material";
 import { PopupNewPostComponent } from "./popup/popup.newpost.component";
 import { BootstrapModalModule } from "ng2-bootstrap-modal";
 import { PopupConfirmComponent } from "./popup/popup.confirm.component";
+import { DialogTest01Component } from "./dialog/dialog.test01.component";
 
 @NgModule({
   imports: [
@@ -27,10 +28,12 @@ import { PopupConfirmComponent } from "./popup/popup.confirm.component";
     MainLayoutComponent,
     TimeLineComponent,
     PopupNewPostComponent,
-    PopupConfirmComponent
+    PopupConfirmComponent,
+    DialogTest01Component
   ],
   entryComponents:[
-    PopupConfirmComponent
+    PopupConfirmComponent,
+    DialogTest01Component
   ],
   providers: [],
   bootstrap: [AppComponent]
