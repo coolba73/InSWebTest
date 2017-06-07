@@ -6,11 +6,11 @@ import { AccountComponent } from "./account/account.component";
 
 export const routes : Routes = [
     {
-        path:'',
+        path:'main',
         component: MainLayoutComponent
     },
     {
-        path:'account',
+        path:'',
         component : AccountComponent
     }
 ];
