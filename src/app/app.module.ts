@@ -7,11 +7,12 @@ import { MainLayoutComponent } from "./layouts/mainlayout.component";
 import { AppRoutingModule } from "./app.routing";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { TimeLineComponent } from "./timeline/timeline.component";
-import { MaterialModule } from "@angular/material";
+import { MaterialModule, MdInputModule } from "@angular/material";
 import { PopupNewPostComponent } from "./popup/popup.newpost.component";
 import { BootstrapModalModule } from "ng2-bootstrap-modal";
 import { PopupConfirmComponent } from "./popup/popup.confirm.component";
 import { DialogTest01Component } from "./dialog/dialog.test01.component";
+import { AccountComponent } from "./account/account.component";
 
 @NgModule({
   imports: [
@@ -21,7 +22,8 @@ import { DialogTest01Component } from "./dialog/dialog.test01.component";
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    BootstrapModalModule
+    BootstrapModalModule,
+    MdInputModule
   ],
   declarations: [
     AppComponent,
@@ -29,7 +31,8 @@ import { DialogTest01Component } from "./dialog/dialog.test01.component";
     TimeLineComponent,
     PopupNewPostComponent,
     PopupConfirmComponent,
-    DialogTest01Component
+    DialogTest01Component,
+    AccountComponent
   ],
   entryComponents:[
     PopupConfirmComponent,

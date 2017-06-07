@@ -1,0 +1,13 @@
+.example-card {
+  width: 400px;
+}
+
+.example-header-image {
+  background-size: cover;
+}
+
+
+.inner {
+  display: table;
+  margin: 0 auto;
+}

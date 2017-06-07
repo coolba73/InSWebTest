@@ -5,5 +5,12 @@ import { MdDialog, MdDialogRef } from "@angular/material";
     templateUrl:'./dialog.test01.component.html'
 })
 export class DialogTest01Component{
+
     constructor(public dialogRef:MdDialogRef<DialogTest01Component>){}
+
+    FormClose(value:string)
+    {
+        this.dialogRef.close(value);
+        // alert(value);
+    }
 }
