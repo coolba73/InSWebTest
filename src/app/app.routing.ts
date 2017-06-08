@@ -17,10 +17,6 @@ export const routes : Routes = [
         component : AccountComponent
     },
     {
-        path:'card',
-        component : CardLayout01Component
-    },
-    {
         path:'test',
         component : Test01Component
     },
@@ -30,7 +26,7 @@ export const routes : Routes = [
         children:[
             {
                 path:'card',
-                loadChildren: './cardlayout/cardlayout01.module#card'
+                loadChildren: './cardlayout/cardlayout.module#CardLayoutModule'
             }
         ]
     }
