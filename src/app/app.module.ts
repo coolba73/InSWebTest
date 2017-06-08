@@ -15,6 +15,8 @@ import { DialogTest01Component } from "./dialog/dialog.test01.component";
 import { AccountComponent } from "./account/account.component";
 import { CardLayout01Component } from "./cardlayout/cardlayout01.component";
 import { Test01Component } from "./test/test01.component";
+import { Mainlayout02Component } from "./layouts/mainlayout02.component";
+
 
 @NgModule({
   imports: [
@@ -36,7 +38,8 @@ import { Test01Component } from "./test/test01.component";
     DialogTest01Component,
     AccountComponent,
     CardLayout01Component,
-    Test01Component
+    Test01Component,
+    Mainlayout02Component
   ],
   entryComponents:[
     PopupConfirmComponent,

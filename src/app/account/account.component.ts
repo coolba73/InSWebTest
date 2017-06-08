@@ -14,12 +14,12 @@ export class AccountComponent{
     login_click()
     {
         // alert('login');
-        this.router.navigate(['main']);
+        this.router.navigate(['main2']);
     }
 
     create_click()
     {
         // alert('create');
-        this.router.navigate(['main']);
+        this.router.navigate(['main2']);
     }
 }

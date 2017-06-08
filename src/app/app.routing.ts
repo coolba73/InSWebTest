@@ -5,6 +5,7 @@ import { MainLayoutComponent } from "./layouts/mainlayout.component";
 import { AccountComponent } from "./account/account.component";
 import { CardLayout01Component } from "./cardlayout/cardlayout01.component";
 import { Test01Component } from "./test/test01.component";
+import { Mainlayout02Component  } from "./layouts/mainlayout02.component";
 
 export const routes : Routes = [
     {
@@ -23,6 +24,18 @@ export const routes : Routes = [
         path:'test',
         component : Test01Component
     },
+    {
+        path:'main2',
+        component : Mainlayout02Component,
+        children:[
+            {
+                path:'card',
+                loadChildren: './cardlayout/cardlayout01.module#card'
+            }
+        ]
+    }
+
+
 ];
 
 @NgModule({
