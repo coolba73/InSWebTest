@@ -13,6 +13,8 @@ import { BootstrapModalModule } from "ng2-bootstrap-modal";
 import { PopupConfirmComponent } from "./popup/popup.confirm.component";
 import { DialogTest01Component } from "./dialog/dialog.test01.component";
 import { AccountComponent } from "./account/account.component";
+import { CardLayout01Component } from "./cardlayout/cardlayout01.component";
+import { Test01Component } from "./test/test01.component";
 
 @NgModule({
   imports: [
@@ -32,7 +34,9 @@ import { AccountComponent } from "./account/account.component";
     PopupNewPostComponent,
     PopupConfirmComponent,
     DialogTest01Component,
-    AccountComponent
+    AccountComponent,
+    CardLayout01Component,
+    Test01Component
   ],
   entryComponents:[
     PopupConfirmComponent,

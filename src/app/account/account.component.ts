@@ -13,13 +13,13 @@ export class AccountComponent{
 
     login_click()
     {
-        alert('login');
+        // alert('login');
         this.router.navigate(['main']);
     }
 
     create_click()
     {
-        alert('create');
+        // alert('create');
         this.router.navigate(['main']);
     }
 }
